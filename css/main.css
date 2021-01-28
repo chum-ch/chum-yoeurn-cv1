@@ -46,11 +46,11 @@ body {
 nav ul li a {
     font-family: sans-serif;
     font-size: 25px;
-    color: rgb(18, 41, 250);
+    color: #f6f5f5;
     text-decoration: none;
 }
 nav ul li a:hover {
-    color: rgb(4, 14, 48);
+    color: #cdd0cb;
 }
 
 .header .im-bg img{
@@ -62,18 +62,15 @@ nav ul li a:hover {
 .header .text {
     position: absolute;
     width: 60%;
-    background: rgba(0, 0,0, 0.2);
     top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
 }
 .header .text .main-text {
     display: flex;
     width: 100%;
     flex-direction: column;
-    text-align: justify;
+    text-align: center;
     padding: 20px;
     box-sizing: border-box;
     line-height: 1.5;
@@ -81,21 +78,13 @@ nav ul li a:hover {
 }
 .header .text .main-text h3 {
     text-align: center;
+    color: #000000;
+    font-weight: bolder;
 }
-.header .text .main-text button{
-    width:40% ;
-    margin: 4vh auto;
-    padding: 10px;
-    outline: none;
-    border: none;
-    cursor: pointer;
+.im-bg img {
+    opacity: .3;
 }
-.header .text .main-text button a{
-    text-decoration: none;
-    letter-spacing: 2px;
-    color: rgb(6, 38, 177);
-    text-transform: uppercase;
-}
+
 .icon {
     display: flex;
     justify-content: center;
@@ -125,13 +114,13 @@ nav ul li a:hover {
 }
 
 .title-left h1 {
-    color: darkgrey;
-    background: rgb(239, 239, 240);
+    color: rgb(10, 103, 209);
+    background: rgba(136, 136, 139, 0.397);
     padding: 10px;
     width: 50%;
     font-size: 20px;
     text-align: center;
-    border-top-right-radius: 20px;
+    border-radius: 5px 20px 0px 0px;
     position: relative;
     left: 57%;
     transform: translateX(-18%);
@@ -146,13 +135,13 @@ nav ul li a:hover {
     width: 70%;
 }
 .title-right h1 {
-    color: darkgrey;
-    background: rgb(239, 239, 240);
+    color: rgb(10, 103, 209);
+    background: rgba(136, 136, 139, 0.397);
     padding: 10px;
     width: 50%;
     font-size: 20px;
     text-align: center;
-    border-top-left-radius: 20px;
+    border-radius: 20px 5px 0px 0px;
 }
 .title-right hr{
     background: rgb(66, 130, 214);
@@ -163,10 +152,25 @@ nav ul li a:hover {
 .grid-lay{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 5%;
     margin-bottom:20px;
 }
+.grid-lay .box h1{
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+}
 .grid-lay .pic1 {
+    background: url(../images/Design-Resume-CV-Template-Word-Format-to-download-1-1.jpg);
+    background-size: cover;
+}
+.grid-lay .pic2 {
     background: url(../images/General-Cover-Letter-Example-Template.png);
+}
+.grid-lay .pic3 {
+    background: url(../images/Urbanest-Resume-Template-b-724x1024.jpg);
 }
 .grid-lay .box {
     width: 80%;
@@ -178,7 +182,7 @@ nav ul li a:hover {
     border: 2px solid rgb(22, 181, 255);
 }
 .grid-lay .box:hover {
-    transform: scale(.8);
+    transform: scale(.9);
     transition: 1s;
     
 }
@@ -187,19 +191,19 @@ nav ul li a:hover {
     text-align: center;
     height: 45vh;
     opacity: 0;
-    transition: 2s;
-    color: rgb(75, 74, 74);
-    background: rgba(10, 98, 231, 0.185);
+    transition: 1s;
+    color: rgb(255, 255, 255);
+    background: rgba(130, 128, 236, 0.418);
 }
 .grid-lay .box .content div {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .grid-lay .box .content h4 {
     font-size: 20px;
 }
 .grid-lay .box .content:hover {
     opacity: 1;
-    transition: 2s;
+    transition: 1s;
     border-radius: 5px;
 }
 .grid-lay .box .content button {
@@ -229,6 +233,14 @@ nav ul li a:hover {
     height: 40vh;
     width: 100%;
 }
+.aboutMe .content p {
+    color: antiquewhite;
+    padding: 10px;
+}
+.aboutMe .content h4 {
+    font-size: 20px;
+    color: whitesmoke;
+}
 .aboutMe .img-pv {
     display: flex;
     justify-content: space-around;
@@ -248,9 +260,8 @@ nav ul li a:hover {
 .aboutMe .img-pv .main h4 {
     position: absolute;
     z-index: 2;
-    left: 40%;
+    left: 12%;
     transition: 1s;
-    transform: translateX(30%);
     opacity: 0;
 }
 .aboutMe .img-pv .main p {
@@ -261,16 +272,20 @@ nav ul li a:hover {
     transition: 1.5s;
     padding: 11px;
 }
+.aboutMe .img-pv .main p a {
+    color: #f6f5f5;
+    font-size: 20px;
+}
 .aboutMe .img-pv .main p:hover{
     transform: translateY(20%);
     transition: 1.5s;
     height: 21vh;
 }
 .aboutMe .img-pv .main:hover h4{
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 1;
-    color: rgb(14, 104, 238);
-    font-size: 20px;
+    color: rgba(250, 187, 15, 0.89);
+    font-weight: bolder;
 }
 .aboutMe .img-pv .main:hover{
     transform: scale(1.1);
@@ -331,11 +346,11 @@ nav ul li a:hover {
     width: 100%;
     text-align: center;
 }
-
-
-
-
-
+.boxAboutMe .layout-me .textAboutMe a{
+    text-align: center;
+    text-decoration: none;
+    color: beige;
+}
 
 
 
@@ -375,6 +390,7 @@ footer {
     padding: 30px;
     font-size: 20px;
     color: rgb(240, 21, 64);
+    margin: 20px 0px 0px 0px;
 }
 footer .fa {
     margin: 10px;
