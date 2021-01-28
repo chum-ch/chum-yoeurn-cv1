@@ -52,3 +52,81 @@ nav ul li a {
 nav ul li a:hover {
     color: rgb(4, 14, 48);
 }
+
+
+.aboutMe {
+    background: url(/images/pv.jpg) no-repeat;
+    background-position: center -150px;
+    width: 85%;
+    height: 40vh;
+    margin: 80px auto;
+    text-align: center;
+}
+.aboutMe .content {
+    background: rgba(138, 137, 137, 0.555);
+    height: 40vh;
+    width: 100%;
+}
+.aboutMe .img-pv {
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    margin: -90px 0px;
+}
+.aboutMe .img-pv .main {
+    width: 200px;
+    position: relative;
+    transition: 2s;
+}
+.aboutMe .img-pv .main img{
+    width: 200px;
+    height: 30vh;
+}
+.aboutMe .img-pv .main h4 {
+    position: absolute;
+    z-index: 2;
+    left: 40%;
+    transition: 2s;
+    transform: translateX(30%);
+    opacity: 0;
+}
+.aboutMe .img-pv .main p {
+    position: absolute;
+    color: #eee;
+    background: rgba(0, 0,0, 0.2);
+    height: 26vh;
+    transition: 2s;
+    padding: 12px;
+}
+.aboutMe .img-pv .main p:hover{
+    transform: translateY(20%);
+    transition: 2s;
+    height: 21vh;
+}
+.aboutMe .img-pv .main:hover h4{
+    transform: scale(1.2);
+    opacity: 1;
+    color: rgb(14, 104, 238);
+    font-size: 20px;
+}
+.aboutMe .img-pv .main:hover{
+    transform: scale(1.1);
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background: rgba(0, 2, 3, 0.37);
+    width: 2.5%;
+    top: 50%;
+    position: fixed;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.fa {
+    margin: 10px 0px;
+    cursor: pointer;
+}

@@ -52,3 +52,21 @@ nav ul li a {
 nav ul li a:hover {
     color: rgb(4, 14, 48);
 }
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background: rgba(0, 2, 3, 0.37);
+    width: 2.5%;
+    top: 50%;
+    position: fixed;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.fa {
+    margin: 10px 0px;
+    cursor: pointer;
+}
