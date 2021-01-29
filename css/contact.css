@@ -176,17 +176,22 @@ footer .fa {
 
 @media screen and (max-width: 767px) {
     /* start of medium tablet styles */
-        .menu, .logo {
-            display: block;
-        }
-        .logo nav ul{
-            flex-direction: column;
-            text-align: center;
-        }
-        .cv {
-            text-align: center;
-            margin: 16px -100px 0px 0px;
-        }
+    .menu, .logo {
+        display: block;
+    }
+    .menu .logo img {
+        position: absolute;
+    }
+    .logo nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .cv ul{
+        text-align: center;
+    }
+    .cv ul li a{
+        margin-left: 90px;
+    }
         .contact {
             display: block;
         }

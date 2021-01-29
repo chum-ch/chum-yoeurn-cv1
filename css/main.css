@@ -243,18 +243,19 @@ nav ul li a:hover {
 .aboutMe .img-pv {
     display: flex;
     justify-content: space-around;
-    height: 30vh;
-    margin: -90px 0px;
+    /* height: 30vh; */
+    margin: -80px 0px;
 }
 .aboutMe .img-pv .main {
-    width: 200px;
+    width: 30%;
     position: relative;
     transition: 1s;
     font-size: 15px;
 }
 .aboutMe .img-pv .main img{
-    width: 200px;
+    width: 100%;
     height: 30vh;
+    opacity: .4;
 }
 .aboutMe .img-pv .main h4 {
     position: absolute;
@@ -262,24 +263,17 @@ nav ul li a:hover {
     left: 12%;
     transition: 1s;
     opacity: 0;
+    margin-top: 10px;
 }
 .aboutMe .img-pv .main p {
     position: absolute;
-    color: #eee;
-    background: rgba(0, 0,0, 0.2);
-    height: 26vh;
+    /* height: 26vh; */
+    margin-top: 25px;
     transition: 1.5s;
     padding: 11px;
 }
-.aboutMe .img-pv .main p a {
-    color: #f6f5f5;
-    font-size: 20px;
-}
-.aboutMe .img-pv .main p:hover{
-    transform: translateY(20%);
-    transition: 1.5s;
-    height: 21vh;
-}
+
+
 .aboutMe .img-pv .main:hover h4{
     transform: scale(1.1);
     opacity: 1;
@@ -356,6 +350,7 @@ nav ul li a:hover {
 }
 .map iframe {
     width: 100%;
+    height: 50vh;
 }
 
 footer {
@@ -371,7 +366,7 @@ footer .fa {
 }
 
 
-@media (max-width:767px){
+@media (max-width:900px){
     /* start of medium tablet styles */
         .menu, .logo {
             display: block;
@@ -405,6 +400,8 @@ footer .fa {
         .grid-lay .box {
             margin: 40px 0px 20px 40px ;
         }
+
+        
         .aboutMe {
             margin-top: 100px;
             
@@ -413,24 +410,24 @@ footer .fa {
             display: block;
             margin: 20px 0px;
         }
-        .aboutMe .img-pv .main {
-            margin-left: 35px;
+        .img-pv .main {
+            margin: 0 auto;
+            width: 100%;
+            
         }
-        .aboutMe .img-pv .main p {
-            background: rgba(0, 0,0, 0.2);
-            width: 500px;
-            margin: 10px 0px 0px 0px;
-            box-sizing: border-box;
+        .aboutMe .img-pv .main p{
+            margin-top: 50px;
         }
         .aboutMe .img-pv .main img {
-            width: 500px;
-            height: 40vh;
-            margin: 10px 0;
+            margin: 10px 0px;
+            width: 100%;
+            transform: translateX(-100%);
+            opacity: 1;
         }
         .About {
             height: 100vh;
             position: relative;
-            top: 700px;
+            top: 750px;
         }
         .About .layout-me {
             display: block;
@@ -440,13 +437,48 @@ footer .fa {
             border-right: none;
             border-bottom: 4px solid rgb(14, 104, 221);
         }
-
-
+        .About {
+            height: 100vh;
+            position: relative;
+            top: 750px;
+        }
         .map {
-            margin-top: 700px;
+            margin-top: 760px;
         }
         footer{
             margin: 10px 0px 0px 0px;
         }
         
+    }
+    @media (max-width:600px) {
+        
+        .aboutMe .img-pv .main h4{
+            margin-top: 10px;
+        }
+        .aboutMe .img-pv .main p{
+            margin-top: 50px;
+            font-size: 10px;
+        }
+        .About {
+            height: 100vh;
+            position: relative;
+            top: 850px;
+        }
+        .map {
+            margin-top: 840px;
+        }
+    }
+    @media (max-width:400px) {
+        
+        .aboutMe .img-pv .main h4{
+            margin-top: 10px;
+            font-size: 10px;
+        }
+        .aboutMe .img-pv .main p{
+            margin-top: 70px;
+            font-size: 10px;
+        }
+        .map {
+            margin-top: 620px;
+        }
     }
